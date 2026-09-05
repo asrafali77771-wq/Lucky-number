@@ -1,89 +1,217 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TOTO 4D Update</title>
+
+<title>4D Lucky Hub</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
-    text-align: center;
+*{
+    box-sizing:border-box;
 }
 
-header {
-    background: #111;
-    color: white;
-    padding: 25px 10px;
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:linear-gradient(135deg,#090014,#1b0035,#070018);
+    color:white;
 }
 
-h1 {
-    margin: 0;
-    font-size: 32px;
+header{
+    padding:35px 15px;
+    text-align:center;
+    background:linear-gradient(135deg,#ff0066,#6a00ff,#00c6ff);
+    box-shadow:0 5px 25px rgba(0,0,0,.5);
 }
 
-.container {
-    max-width: 600px;
-    margin: 25px auto;
-    padding: 15px;
+.logo{
+    width:110px;
+    height:110px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#ffd700,#ff7b00,#ff0066);
+    border:5px solid white;
+    box-shadow:0 0 35px #ffd700;
+    font-size:25px;
+    font-weight:bold;
 }
 
-.card {
-    background: white;
-    margin: 15px 0;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+header h1{
+    font-size:38px;
+    margin:20px 0 5px;
+    text-shadow:0 0 15px #fff;
 }
 
-.prize {
-    font-size: 22px;
-    font-weight: bold;
+header p{
+    margin:0;
+    font-size:17px;
 }
 
-.number {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 10px 0;
+.container{
+    max-width:650px;
+    margin:auto;
+    padding:20px 15px;
 }
 
-button {
-    width: 100%;
-    padding: 16px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
+.notice{
+    background:#ffcc00;
+    color:#111;
+    padding:12px;
+    border-radius:12px;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:20px;
 }
 
-button:hover {
-    opacity: 0.85;
+.card{
+    margin:22px 0;
+    padding:25px;
+    border-radius:22px;
+    background:linear-gradient(145deg,#17102b,#28134b);
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 8px 30px rgba(0,0,0,.45);
+    text-align:center;
 }
 
-.update {
-    background: #222;
-    color: white;
+.card h2{
+    font-size:30px;
+    margin:0 0 15px;
 }
 
-.winner {
-    background: #ddd;
-    color: #111;
+.toto{
+    color:#00eaff;
+    text-shadow:0 0 15px #00eaff;
 }
 
-.contact {
-    background: #111;
-    color: white;
+.magnum{
+    color:#ffd000;
+    text-shadow:0 0 15px #ffd000;
 }
 
-footer {
-    margin-top: 30px;
-    padding: 20px;
-    background: #111;
-    color: white;
+.dragon{
+    color:#ff4b22;
+    text-shadow:0 0 15px #ff4b22;
+}
+
+.visual{
+    height:150px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:15px 0;
+    font-size:35px;
+    font-weight:bold;
+    letter-spacing:2px;
+    background:linear-gradient(135deg,#071d46,#00a8ff,#18204d);
+    box-shadow:inset 0 0 30px rgba(255,255,255,.15);
+}
+
+.magnum-box{
+    background:linear-gradient(135deg,#4a2500,#d18b00,#fff0a0,#8b5000);
+    color:#211400;
+}
+
+.dragon-box{
+    background:linear-gradient(135deg,#210000,#a50000,#ff6a00,#330000);
+    color:white;
+}
+
+.price{
+    font-size:27px;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.description{
+    line-height:1.6;
+    color:#ddd;
+}
+
+button{
+    width:100%;
+    border:0;
+    padding:16px;
+    margin-top:12px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.whatsapp{
+    background:#25D366;
+    color:white;
+    box-shadow:0 0 18px rgba(37,211,102,.5);
+}
+
+.info{
+    background:#ffffff;
+    color:#111;
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+.winners-title{
+    text-align:center;
+    margin:35px 0 15px;
+    font-size:28px;
+}
+
+.winner{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    margin:12px 0;
+    border-radius:15px;
+    background:#191225;
+}
+
+.person{
+    width:65px;
+    height:65px;
+    flex-shrink:0;
+    border-radius:50%;
+    background:linear-gradient(135deg,#777,#ddd,#555);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#111;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.winner strong{
+    display:block;
+    font-size:17px;
+}
+
+.winner span{
+    color:#ffd000;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:30px 15px;
+    margin-top:30px;
+    background:#050008;
+    color:#aaa;
+    line-height:1.6;
+}
+
+.small{
+    font-size:12px;
+    color:#999;
+    margin-top:10px;
 }
 </style>
 </head>
@@ -91,39 +219,33 @@ footer {
 <body>
 
 <header>
-    <h1>TOTO 4D UPDATE</h1>
-    <p>Lucky Number Results</p>
+
+    <div class="logo">
+        4D
+    </div>
+
+    <h1>4D LUCKY HUB</h1>
+    <p>TOTO 4D • MAGNUM 4D • DRAGON 4D</p>
+
 </header>
 
 <div class="container">
 
-    <div class="card">
-        <div class="prize">First Prize</div>
-        <div class="number">350</div>
-        <p>Ringgit</p>
+    <div class="notice">
+        DEMO / PROMOTIONAL WEBSITE
     </div>
 
-    <div class="card">
-        <div class="prize">Second Prize</div>
-        <div class="number">---</div>
-    </div>
+
+    <!-- TOTO -->
 
     <div class="card">
-        <div class="prize">Third Prize</div>
-        <div class="number">---</div>
-    </div>
 
-    <div class="card">
-        <button class="update">TOTO 4D UPDATE</button>
-        <button class="winner">WINNER</button>
-        <button class="contact">CONTACT</button>
-    </div>
+        <h2 class="toto">TOTO 4D</h2>
 
-</div>
+        <div class="visual">
+            TOTO 4D
+        </div>
 
-<footer>
-    Lucky Number
-</footer>
-
-</body>
-</html>
+        <div class="price">
+            Membership: RM350
+        </div>
