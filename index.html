@@ -1,13 +1,772 @@
-<a
-      class="whatsapp"
-      href="https://wa.me/601123648348?text=Hello%2C%20I%20am%20interested%20in%20MAGNUM%204D%20membership."
-      target="_blank">
+Abbas Ali:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      💬 Contact on WhatsApp
+<title>4D Membership</title>
 
-    </a>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-  </div>
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    min-height:100vh;
+    color:#fff;
+    background:
+        radial-gradient(circle at 15% 10%,#ffcc00 0,transparent 25%),
+        radial-gradient(circle at 90% 20%,#ff3cac 0,transparent 25%),
+        radial-gradient(circle at 50% 90%,#00c6ff 0,transparent 28%),
+        #080914;
+}
+
+/* TOP BAR */
+
+.topbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    padding:13px 18px;
+    background:rgba(5,5,15,.82);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.topbar-inner{
+    max-width:1050px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand{
+    font-size:21px;
+    font-weight:1000;
+    letter-spacing:1px;
+}
+
+.brand span{
+    color:#ffd43b;
+}
+
+.top-whatsapp{
+    text-decoration:none;
+    color:white;
+    background:#25D366;
+    padding:10px 17px;
+    border-radius:30px;
+    font-weight:900;
+}
+
+/* MAIN */
+
+.container{
+    width:92%;
+    max-width:1050px;
+    margin:auto;
+}
+
+/* HERO */
+
+.hero{
+    padding:45px 0 35px;
+}
+
+.hero-poster{
+    min-height:450px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    border-radius:35px;
+    padding:40px 20px;
+    position:relative;
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd000,
+            #ff5a5f 45%,
+            #7928ca
+        );
+
+    border:3px solid rgba(255,255,255,.45);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.55),
+        inset 0 2px 0 rgba(255,255,255,.4);
+}
+
+.hero-poster:before{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    background:rgba(255,255,255,.18);
+    top:-180px;
+    right:-100px;
+}
+
+.hero-poster:after{
+    content:"";
+    position:absolute;
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    background:rgba(255,255,255,.12);
+    bottom:-170px;
+    left:-100px;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.small-title{
+    display:inline-block;
+    padding:9px 18px;
+    border-radius:50px;
+    background:rgba(0,0,0,.3);
+    font-size:13px;
+    font-weight:900;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(52px,11vw,105px);
+    line-height:.9;
+    font-weight:1000;
+    letter-spacing:4px;
+    text-shadow:
+        5px 6px 0 rgba(0,0,0,.35),
+        0 12px 30px rgba(0,0,0,.25);
+}
+
+.hero p{
+    margin-top:25px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* SECTION */
+
+.section-heading{
+    text-align:center;
+    margin:25px 0 30px;
+}
+
+.section-heading h2{
+    font-size:38px;
+}
+
+.section-heading p{
+    color:#c8cada;
+    margin-top:8px;
+}
+
+/* MAIN POSTER CARDS */
+
+.poster{
+    margin:45px 0;
+    min-height:500px;
+    position:relative;
+    overflow:hidden;
+    border-radius:34px;
+    border:3px solid rgba(255,255,255,.35);
+
+    box-shadow:
+        0 28px 70px rgba(0,0,0,.55),
+        inset 0 1px 0 rgba(255,255,255,.4);
+
+    transition:transform .3s ease,box-shadow .3s ease;
+}
+
+.poster:hover{
+    transform:translateY(-7px);
+    box-shadow:
+        0 35px 85px rgba(0,0,0,.65);
+}
+
+.poster:before{
+    content:"";
+    position:absolute;
+    width:390px;
+    height:390px;
+    border-radius:50%;
+    background:rgba(255,255,255,.12);
+    top:-220px;
+    right:-100px;
+}
+
+.poster:after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:rgba(255,255,255,.1);
+    bottom:-190px;
+    left:-100px;
+}
+
+.toto{
+    background:
+        linear-gradient(135deg,#ffca05,#ff3d68 48%,#7928ca);
+}
+
+.magnum{
+    background:
+        linear-gradient(135deg,#00d9ff,#0878ff 50%,#5518b8);
+}
+
+.dragon{
+    background:
+        linear-gradient(135deg,#ffb300,#f04438 45%,#850000);
+}
+
+.poster-inner{
+    position:relative;
+    z-index:3;
+    min-height:500px;
+    padding:40px 25px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.poster-number{
+    width:62px;
+    height:62px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:rgba(0,0,0,.25);
+    border:2px solid rgba(255,255,255,.3);
+    font-size:22px;
+    font-weight:1000;
+    margin-bottom:15px;
+}
+
+.poster h2{
+    font-size:clamp(48px,10vw,85px);
+    line-height:.95;
+    font-weight:1000;
+    letter-spacing:3px;
+    text-shadow:
+        5px 6px 0 rgba(0,0,0,.32);
+}
+
+.subtitle{
+    font-size:18px;
+    font-weight:bold;
+    margin-top:15px;
+    margin-bottom:25px;
+}
+
+/* PRICE */
+
+.price-card{
+    background:#fff;
+    color:#111;
+    padding:18px 30px;
+    border-radius:22px;
+    min-width:220px;
+    box-shadow:0 12px 28px rgba(0,0,0,.35);
+    margin-bottom:25px;
+}
+
+.price-card small{
+    display:block;
+    font-size:12px;
+    font-weight:900;
+    color:#777;
+    text-transform:uppercase;
+}
+
+.price-card strong{
+    display:block;
+    font-size:34px;
+    margin-top:4px;
+}
+
+/* INFORMATION */
+
+.details{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:27px;
+}
+
+.detail{
+    padding:10px 15px;
+    border-radius:30px;
+    background:rgba(0,0,0,.23);
+    border:1px solid rgba(255,255,255,.25);
+    font-size:14px;
+    font-weight:900;
+}
+
+/* BUTTON */
+
+.main-button{
+    display:flex;
+    width:100%;
+    max-width:500px;
+    align-items:center;
+    justify-content:center;
+    padding:19px;
+    border-radius:18px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    font-size:19px;
+    font-weight:1000;
+    box-shadow:0 12px 28px rgba(0,0,0,.35);
+    transition:.25s;
+}
+
+.main-button:hover{
+    transform:scale(1.025);
+    background:#1ebe5d;
+}
+
+/* WINNER AREA */
+
+.winner-area{
+    margin-top:75px;
+    padding:38px 20px;
+    border-radius:34px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.16);
+    box-shadow:0 25px 65px rgba(0,0,0,.4);
+}
+
+.winner-area h2{
+    text-align:center;
+    font-size:42px;
+}
+
+.winner-area > p{
+    text-align:center;
+    color:#c7cada;
+    margin-top:8px;
+    margin-bottom:25px;
+}
+
+.demo-warning{
+    max-width:650px;
+    margin:0 auto 30px;
+    padding:12px 15px;
+    text-align:center;
+    border-radius:12px;
+    background:rgba(255,193,7,.12);
+    border:1px solid rgba(255,193,7,.35);
+    color:#ffe28a;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* WINNER CARDS */
+
+.winner-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.winner-card{
+    background:#fff;
+    color:#111;
+    border-radius:23px;
+    overflow:hidden;
+    box-shadow:0 16px 35px rgba(0,0,0,.4);
+    transition:.3s;
+}
+
+.winner-card:hover{
+    transform:translateY(-6px);
+}
+
+.fake-photo{
+    height:200px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:85px;
+
+    background:
+        linear-gradient(135deg,#ffd43b,#ff4f81);
+}
+
+.winner-info{
+    padding:18px;
+    text-align:center;
+}
+
+.winner-name{
+    font-size:18px;
+    font-weight:1000;
+}
+
+.winner-amount{
+    margin-top:8px;
+    font-size:27px;
+    font-weight:1000;
+    color:#d60000;
+}
+
+.winner-label{
+    margin-top:5px;
+    color:#777;
+    font-size:12px;
+    font-weight:900;
+}
+
+/* FINAL AREA */
+
+.final-box{
+    margin:60px 0 35px;
+    padding:40px 22px;
+    border-radius:30px;
+    text-align:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(124,58,237,.6),
+            rgba(0,198,255,.3)
+        );
+
+    border:1px solid rgba(255,255,255,.2);
+}
+
+.final-box h2{
+    font-size:35px;
+}
+
+.final-box p{
+    margin:12px 0 25px;
+    color:#d1d4e3;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:25px 15px 45px;
+    color:#9295aa;
+    font-size:13px;
+    line-height:1.7;
+}
+
+/* FLOATING WHATSAPP */
+
+.floating{
+    position:fixed;
+    z-index:999;
+    right:20px;
+    bottom:20px;
+    width:62px;
+    height:62px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .brand{
+        font-size:17px;
+    }
+
+    .top-whatsapp{
+        font-size:12px;
+        padding:9px 13px;
+    }
+
+    .hero{
+        padding-top:25px;
+    }
+
+    .hero-poster{
+        min-height:420px;
+        border-radius:28px;
+    }
+
+    .hero h1{
+        font-size:56px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .section-heading h2{
+        font-size:30px;
+    }
+
+    .poster{
+        min-height:470px;
+        border-radius:27px;
+    }
+
+    .poster-inner{
+        min-height:470px;
+        padding:35px 15px;
+    }
+
+    .poster h2{
+        font-size:48px;
+    }
+
+    .price-card{
+        min-width:200px;
+    }
+
+    .winner-grid{
+        grid-template-columns:1fr;
+    }
+
+    .winner-card{
+        width:100%;
+        max-width:350px;
+        margin:auto;
+    }
+
+    .winner-area h2{
+        font-size:32px;
+    }
+
+    .floating{
+        width:56px;
+        height:56px;
+        right:15px;
+        bottom:15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP NAVIGATION -->
+
+<nav class="topbar">
+
+    <div class="topbar-inner">
+
+        <div class="brand">
+            <span>4D</span> MEMBERSHIP
+        </div>
+
+        <a
+            class="top-whatsapp"
+            href="https://wa.me/601123648348?text=Hello%2C%20I%20want%20more%20information."
+            target="_blank">
+            WhatsApp
+        </a>
+
+    </div>
+
+</nav>
+
+
+<main class="container">
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-poster">
+
+        <div class="hero-content">
+
+            <div class="small-title">
+                PREMIUM MEMBERSHIP
+            </div>
+
+            <h1>
+                4D<br>
+                MEMBERSHIP
+            </h1>
+
+            <p>
+                Select your preferred 4D membership below
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TITLE -->
+
+<section class="section-heading">
+
+    <h2>
+        Choose Your Membership
+    </h2>
+
+    <p>
+        Scroll down to view all available options
+    </p>
+
+</section>
+
+
+<!-- =========================
+     TOTO 4D
+========================= -->
+
+<section class="poster toto">
+
+    <div class="poster-inner">
+
+        <div class="poster-number">
+            01
+        </div>
+
+        <h2>
+            TOTO 4D
+        </h2>
+
+        <div class="subtitle">
+            PREMIUM MEMBERSHIP
+        </div>
+
+        <div class="price-card">
+
+            <small>
+                Membership Charge
+            </small>
+
+            <strong>
+                RM 350
+            </strong>
+
+        </div>
+
+        <div class="details">
+
+            <div class="detail">
+                ✓ MEMBERSHIP
+            </div>
+
+            <div class="detail">
+                ✓ DIRECT CONTACT
+            </div>
+
+            <div class="detail">
+                ✓ WHATSAPP
+            </div>
+
+        </div>
+
+        <a
+            class="main-button"
+            href="https://wa.me/601123648348?text=Hello%2C%20I%20am%20interested%20in%20TOTO%204D%20membership."
+            target="_blank">
+
+            💬 CONTACT FOR TOTO 4D
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MAGNUM 4D
+========================= -->
+
+<section class="poster magnum">
+
+    <div class="poster-inner">
+
+        <div class="poster-number">
+            02
+        </div>
+
+        <h2>
+            MAGNUM 4D
+        </h2>
+
+        <div class="subtitle">
+            PREMIUM MEMBERSHIP
+        </div>
+
+        <div class="price-card">
+
+            <small>
+                Membership Charge
+            </small>
+
+            <strong>
+                RM 350
+            </strong>
+
+        </div>
+
+        <div class="details">
+
+<div class="detail">
+                ✓ MEMBERSHIP
+            </div>
+
+            <div class="detail">
+                ✓ DIRECT CONTACT
+            </div>
+
+            <div class="detail">
+                ✓ WHATSAPP
+            </div>
+
+        </div>
+
+        <a
+            class="main-button"
+            href="https://wa.me/601123648348?text=Hello%2C%20I%20am%20interested%20in%20MAGNUM%204D%20membership."
+            target="_blank">
+
+            💬 CONTACT FOR MAGNUM 4D
+
+        </a>
+
+    </div>
 
 </section>
 
@@ -16,190 +775,190 @@
      DRAGON 4D
 ========================= -->
 
-<section class="card dragon">
+<section class="poster dragon">
 
-  <div class="card-content">
+    <div class="poster-inner">
 
-    <div class="number">
-      03
+        <div class="poster-number">
+            03
+        </div>
+
+        <h2>
+            DRAGON 4D
+        </h2>
+
+        <div class="subtitle">
+            PREMIUM MEMBERSHIP
+        </div>
+
+        <div class="price-card">
+
+            <small>
+                Membership Charge
+            </small>
+
+            <strong>
+                RM 280
+            </strong>
+
+        </div>
+
+        <div class="details">
+
+            <div class="detail">
+                ✓ MEMBERSHIP
+            </div>
+
+            <div class="detail">
+                ✓ SAMPLE PRIZE RM 50,000
+            </div>
+
+        </div>
+
+        <a
+            class="main-button"
+            href="https://wa.me/601123648348?text=Hello%2C%20I%20am%20interested%20in%20DRAGON%204D%20membership."
+            target="_blank">
+
+            💬 CONTACT FOR DRAGON 4D
+
+        </a>
+
     </div>
 
-    <h3>
-      DRAGON 4D
-    </h3>
+</section>
 
-    <div class="card-subtitle">
-      Premium Membership
+
+<!-- =========================
+     WINNER SECTION
+========================= -->
+
+<section class="winner-area">
+
+    <h2>
+        🏆 WINNER SHOWCASE
+    </h2>
+
+    <p>
+        Sample presentation section
+    </p>
+
+    <div class="demo-warning">
+        DEMO / SAMPLE ONLY — These are example cards.
+        The amounts shown are not guarantees of winnings.
     </div>
 
-    <div class="price-box">
 
-      <div class="price-label">
-        Membership Charge
-      </div>
+    <div class="winner-grid">
 
-      <div class="price">
-        RM 280
-      </div>
+
+        <!-- WINNER 1 -->
+
+        <div class="winner-card">
+
+            <div class="fake-photo">
+                👤
+            </div>
+
+            <div class="winner-info">
+
+                <div class="winner-name">
+                    Demo Member 01
+                </div>
+
+                <div class="winner-amount">
+                    RM 50,000
+                </div>
+
+                <div class="winner-label">
+                    SAMPLE WINNER
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WINNER 2 -->
+
+        <div class="winner-card">
+
+            <div class="fake-photo">
+                👤
+            </div>
+
+            <div class="winner-info">
+
+                <div class="winner-name">
+                    Demo Member 02
+                </div>
+
+                <div class="winner-amount">
+                    RM 50,000
+                </div>
+
+                <div class="winner-label">
+                    SAMPLE WINNER
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- WINNER 3 -->
+
+        <div class="winner-card">
+
+            <div class="fake-photo">
+                👤
+            </div>
+
+            <div class="winner-info">
+
+                <div class="winner-name">
+                    Demo Member 03
+                </div>
+
+                <div class="winner-amount">
+                    RM 50,000
+                </div>
+
+                <div class="winner-label">
+                    SAMPLE WINNER
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
-    <div class="info-row">
+</section>
 
-      <div class="info-pill">
-        ✓ Membership
-      </div>
 
-      <div class="info-pill">
-        ✓ Example Prize RM 50,000
-      </div>
+<!-- =========================
+     FINAL WHATSAPP
+========================= -->
 
-    </div>
+<section class="final-box">
+
+    <h2>
+        📲 CONTACT US
+    </h2>
+
+    <p>
+        Tap below to open WhatsApp directly.
+    </p>
 
     <a
-      class="whatsapp"
-      href="https://wa.me/601123648348?text=Hello%2C%20I%20am%20interested%20in%20DRAGON%204D%20membership."
-      target="_blank">
+        class="main-button"
+        href="https://wa.me/601123648348?text=Hello%2C%20I%20want%20more%20information%20about%204D%20membership."
+        target="_blank">
 
-      💬 Contact on WhatsApp
+        💬 OPEN WHATSAPP
 
     </a>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     WINNER SHOWCASE
-========================= -->
-
-<section class="winners">
-
-  <h2 class="winner-title">
-    🏆 Winner Showcase
-  </h2>
-
-  <p class="winner-description">
-    Sample presentation section
-  </p>
-
-  <div class="demo">
-    DEMO / SAMPLE ONLY — Amounts shown are examples and are not
-    guarantees of winnings.
-  </div>
-
-
-  <div class="winner-grid">
-
-
-    <!-- PERSON 1 -->
-
-    <div class="winner">
-
-      <div class="person">
-        👤
-      </div>
-
-      <div class="winner-info">
-
-        <div class="winner-name">
-          Demo Member 01
-        </div>
-
-        <div class="amount">
-          RM 50,000
-        </div>
-
-        <div class="winner-label">
-          SAMPLE WINNER
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- PERSON 2 -->
-
-    <div class="winner">
-
-      <div class="person">
-        👤
-      </div>
-
-      <div class="winner-info">
-
-        <div class="winner-name">
-          Demo Member 02
-        </div>
-
-        <div class="amount">
-          RM 50,000
-        </div>
-
-        <div class="winner-label">
-          SAMPLE WINNER
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- PERSON 3 -->
-
-    <div class="winner">
-
-      <div class="person">
-        👤
-      </div>
-
-      <div class="winner-info">
-
-        <div class="winner-name">
-          Demo Member 03
-        </div>
-
-        <div class="amount">
-          RM 50,000
-        </div>
-
-        <div class="winner-label">
-          SAMPLE WINNER
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FINAL CONTACT
-========================= -->
-
-<section class="final">
-
-  <h2>
-    📲 Want More Information?
-  </h2>
-
-  <p>
-    Contact us directly on WhatsApp for membership information.
-  </p>
-
-  <a
-    class="whatsapp"
-    href="https://wa.me/601123648348?text=Hello%2C%20I%20want%20more%20information%20about%204D%20membership."
-    target="_blank">
-
-    💬 OPEN WHATSAPP
-
-  </a>
 
 </section>
 
@@ -207,35 +966,29 @@
 </main>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
-  <div>
     © 2026 4D Membership
-  </div>
 
-  <div>
-    Demo promotional layout. Membership and prize information
-    should be presented according to applicable laws and regulations.
-  </div>
+    <br>
+
+Demo promotional layout. Membership and prize information
+    should comply with applicable laws and regulations.
 
 </footer>
 
 
-<!-- =========================
-     FLOATING WHATSAPP
-========================= -->
+<!-- FLOATING WHATSAPP -->
 
 <a
-  class="float-wa"
-  href="https://wa.me/601123648348?text=Hello%2C%20I%20want%20more%20information."
-  target="_blank"
-  aria-label="WhatsApp">
+    class="floating"
+    href="https://wa.me/601123648348?text=Hello%2C%20I%20want%20more%20information."
+    target="_blank"
+    aria-label="WhatsApp">
 
-  💬
+    💬
 
 </a>
 
